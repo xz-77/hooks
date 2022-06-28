@@ -1,6 +1,6 @@
 {
   "name": "some-hooks",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "一个React Hooks库",
   "main": "index.js",
   "private": false,
