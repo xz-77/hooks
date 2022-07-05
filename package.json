@@ -1,5 +1,5 @@
 {
-  "name": "some-hooks",
+  "name": "great-hooks",
   "version": "0.0.1",
   "description": "一个React Hooks库",
   "main": "index.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xz-77/some-hooks.git"
+    "url": "git+https://github.com/xz-77/hooks.git"
   },
   "keywords": [
     "React",
@@ -29,9 +29,9 @@
   "author": "7",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xz-77/some-hooks/issues"
+    "url": "https://github.com/xz-77/hooks/issues"
   },
-  "homepage": "https://github.com/xz-77/some-hooks#readme",
+  "homepage": "https://github.com/xz-77/hooks#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
