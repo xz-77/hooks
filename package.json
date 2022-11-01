@@ -2,7 +2,6 @@
   "name": "@xz/hooks",
   "version": "0.0.1",
   "description": "一个React Hooks库",
-  "main": "index.js",
   "private": false,
   "publishConfig": {
     "access": "public",
@@ -11,6 +10,10 @@
   "files": [
     "lib"
   ],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/es/index.d.ts",
+  "typings": "./lib/es/index.d.ts",
   "scripts": {
     "lint-staged": "lint-staged",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
