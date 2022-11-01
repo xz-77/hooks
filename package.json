@@ -1,5 +1,5 @@
 {
-  "name": "@xz/hooks",
+  "name": "xz-hooks",
   "version": "0.0.2",
   "description": "一个React Hooks库",
   "private": false,
