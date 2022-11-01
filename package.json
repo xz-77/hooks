@@ -19,6 +19,10 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
     "release": "standard-version",
+    "release:alpha": "yarn run release -- --prerelease alpha",
+    "release:minor": "yarn run release --release-as minor",
+    "release:major": "yarn run release --release-as major",
+    "release:patch": "yarn run release --release-as patch",
     "build": "gulp",
     "install-peers": "install-peerdeps"
   },
