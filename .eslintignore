@@ -1,0 +1,7 @@
+# common
+dist/
+lib/
+
+# .eslintrc.js
+.eslintrc.js
+commitlint.config.js

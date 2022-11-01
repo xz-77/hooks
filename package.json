@@ -1,5 +1,5 @@
 {
-  "name": "great-hooks",
+  "name": "@xz/hooks",
   "version": "0.0.1",
   "description": "一个React Hooks库",
   "main": "index.js",
@@ -16,7 +16,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
     "release": "standard-version",
-    "build": "gulp"
+    "build": "gulp",
+    "install-peers": "install-peerdeps"
   },
   "repository": {
     "type": "git",
@@ -33,16 +34,38 @@
   },
   "homepage": "https://github.com/xz-77/hooks#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@types/react": "^18.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "del": "^6.1.1",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^43.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^8.0.1",
+    "install-peerdeps": "^3.0.3",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
     "standard-version": "^9.5.0",
     "typescript": "^4.7.4",
-    "verify-fabric": "^1.2.0"
+    "verify-fabric": "1.6.1"
   },
   "dependencies": {
     "react": "^16.12.0 || ^17.0.0"

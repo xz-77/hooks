@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react';
 
 const useScrollListen = (callback: () => void) => {
   // useEffect(() => {
@@ -33,28 +33,28 @@ const useScrollListen = (callback: () => void) => {
   //   }
   // }, [callback, mustTime, waitTime])
   useEffect(() => {
-    let doing = false
+    const doing = useRef(false);
 
     const handleCallBack = () => {
-      const { scrollY } = window
-      const { clientHeight, scrollHeight } = document.documentElement || document.body
+      const { scrollY } = window;
+      const { clientHeight, scrollHeight } = document.documentElement || document.body;
       if (clientHeight + scrollY >= scrollHeight - 60) {
-        callback()
+        callback();
       }
-      doing = false
-    }
+      doing.current = false;
+    };
     const rafCallback = () => {
-      if (doing) return
-      doing = true
-      window.requestAnimationFrame(handleCallBack)
-    }
+      if (doing.current) return;
+      doing.current = true;
+      window.requestAnimationFrame(handleCallBack);
+    };
 
-    window.addEventListener('scroll', rafCallback)
+    window.addEventListener('scroll', rafCallback);
 
     return () => {
-      window.removeEventListener('scroll', rafCallback)
-    }
-  }, [callback])
-}
+      window.removeEventListener('scroll', rafCallback);
+    };
+  }, [callback]);
+};
 
-export default useScrollListen
+export default useScrollListen;
